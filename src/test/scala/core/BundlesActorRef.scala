@@ -11,6 +11,7 @@ import java.util.UUID
 class BundlesActorRef extends TestKit(ActorSystem()) with SpecificationLike with CoreActors with Core with ImplicitSender{
 
   import Bundles._
+  import services.memoryStorage._
 
   def mkBundle = Bundle(UUID.randomUUID().toString, "new bundle", 10.43)
 
